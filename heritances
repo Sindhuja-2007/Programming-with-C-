@@ -1,0 +1,66 @@
+ //single inheritance
+#include<iostream> using namespace std; class vehicle{ 
+public: 
+vehicle(){ 
+cout<<"This is a vehicle"<<endl;} 
+}; 
+class car:public vehicle 
+{ 
+public: 
+car(){ 
+cout<<"This vehicle is a car"<<endl; 
+} 
+}; 
+int main() 
+{
+cout<<"Roll No:24B11AI291"<<endl; 
+car obj; return 0; 
+}
+//multiple inheritance
+
+#include<iostream> 
+using namespace std; 
+class landvehicle{ 
+public: 
+landvehicle(){ 
+cout<<"This is a land vehicle"<<endl; 
+} 
+}; 
+class watervehicle{ public: 
+watervehicle(){ 
+cout<<"This is a water vehicle"<<endl; 
+} 
+}; 
+class amphibiousvehicle:public watervehicle,public landvehicle{ public: 
+amphibiousvehicle(){ 
+cout<<"This is an both land and water vehicle"<<endl; 
+} 
+}; 
+int main(){ 
+cout<<"Roll No:24B11AI291"<<endl; 
+amphibiousvehicle obj; return 0; 
+}
+//multilevel inheritance
+ 
+#include<iostream> 
+using namespace std; 
+class vehicle{ public: 
+vehicle(){ 
+cout<<"This is a vehicle"<<endl;} 
+}; 
+class fourwheeler:public vehicle{ public: 
+fourwheeler(){ 
+ 
+cout<<"4 wheeler vehicles"<<endl; 
+} 
+}; 
+class car:public fourwheeler{ public: 
+car(){ 
+cout<<"This 4 wheeler vehicle is a car"; 
+} 
+}; 
+int main(){ 
+cout<<"Roll No:24B11AI291"<<endl; 
+car obj; return 0; 
+} 
+ 
